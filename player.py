@@ -39,7 +39,7 @@ class Player():
             print("Choose an action:")
             print("1. Attack")
             print("2. Evade")
-            print("2. Status")
+            print("3. Status")
             choice = input("Enter the number of your chosen action: ")
             if choice == "1":
                 self.attack(enemy)
