@@ -1,7 +1,9 @@
 # game
 **RPG Dungeon Game**
 
-This is a simple RPG game written in Python. The game features a player character who can fight enemies and gain experience to level up.
+This is a simple RPG game written in Python. The game features a player character who can fight enemies and gain experience to level up. 
+
+**site: https://arthur-zm.github.io/game/game_site/**
 
 **Files:**
 
