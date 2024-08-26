@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Inter:700|Inter:400');
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Inter';
+  font-weight: 700;
+}
+
+html {font-size: 100%;} /* 16px */
+
+h1 {font-size: 4.210rem; /* 67.36px */}
+
+h2 {font-size: 3.158rem; /* 50.56px */}
+
+h3 {font-size: 2.369rem; /* 37.92px */}
+
+h4 {font-size: 1.777rem; /* 28.48px */}
+
+h5 {font-size: 1.333rem; /* 21.28px */}
+
+small {font-size: 0.750rem; /* 12px */}
+
+:root {
+    --background: #010104;
+    --primary: #3a31d8;
+    --secondary: #020024;
+    --accent: #0600c2;
+    --text: #ebe9fc;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter';
+    font-weight: 400;
+    background-color: var(--background);
+}
+
+ul {
+    margin: 0;
+    background-color: var(--primary);
+    list-style-type: none;
+     display: flex;
+     flex-direction: row;
+    justify-content: space-evenly;
+}
+
+li {
+    color: var(--accent);
+}
+
+li a {
+    text-decoration: none;
+    color: var(--text);
+    transition: 2s;
+}
+
+li a:hover {
+    background-color: var(--secondary);
+    color: aqua;
+    text-decoration: underline;
+}
