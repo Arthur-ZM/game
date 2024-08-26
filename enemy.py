@@ -2,18 +2,18 @@ import player
 import random
 
 class Enemy():
-    def __init__(self, name, health, armor, level):
+    def __init__(self, name, health, armor, level, exp):
         self.name = name
         self.health = health
         self.armor = armor
         self.level = level
+        self.exp = exp
         self.attack_power = level * 5
 
     def attack(self, player):
         roll = random.randint(1, 20)
         if roll >= player.armor:
             if roll == 20:
-                print("Enemy landed a critical hit")
                 damage = self.attack_power * self.attack_power
                 print(f"Enemy landed a critical hit to {player.name} dealing {damage} points of damage")
                 player.health -= damage

@@ -26,8 +26,9 @@ class Player():
             print(f"Player missed {enemy.name}")
 
     def evade(self, enemy):
-        roll = random.random()
-        if roll < self.evade_chance:
+        roll = random.randint(1, 20)
+        against_roll = random.randint(1, 20)
+        if roll >= against_roll:
             print(f"Player successfully evaded {enemy.name}'s attack!")
             return True
         else:
@@ -62,3 +63,8 @@ class Player():
 
             else:
                 print("Invalid choice. Please try again.")
+        self.level_up(enemy)
+
+    def level_up(self, enemy):
+        self.level += (enemy.exp * 0.1)
+
