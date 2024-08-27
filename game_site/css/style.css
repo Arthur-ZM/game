@@ -3,6 +3,8 @@
 h1, h2, h3, h4, h5 {
   font-family: 'Inter';
   font-weight: 700;
+  color: var(--text);
+  margin-bottom: 10px;
 }
 
 html {font-size: 100%;} /* 16px */
@@ -20,11 +22,11 @@ h5 {font-size: 1.333rem; /* 21.28px */}
 small {font-size: 0.750rem; /* 12px */}
 
 :root {
-    --background: #010104;
-    --primary: #3a31d8;
-    --secondary: #020024;
-    --accent: #0600c2;
-    --text: #ebe9fc;
+    --background: #021107;
+    --primary: #82edad;
+    --secondary: #151990;
+    --accent: #8a30e1;
+    --text: #e0faea;
 }
 
 body {
@@ -32,29 +34,52 @@ body {
     font-family: 'Inter';
     font-weight: 400;
     background-color: var(--background);
+    color: var(--text);
 }
 
-ul {
+nav ul {
     margin: 0;
     background-color: var(--primary);
     list-style-type: none;
-     display: flex;
-     flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    height: 33px;
     justify-content: space-evenly;
+    align-items: center;
 }
 
-li {
+nav li {
     color: var(--accent);
 }
 
-li a {
+nav {
+    height: 40px;
+}
+
+nav li a {
     text-decoration: none;
-    color: var(--text);
+    color: var(--accent);
+    padding: 5px;
     transition: 2s;
 }
 
-li a:hover {
+nav li a:hover {
     background-color: var(--secondary);
     color: aqua;
     text-decoration: underline;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: larger;
+}
+
+main, footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main li {
+    text-align: left;
 }
